@@ -20,7 +20,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/cdncheck@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/cdncheck@sha256:fc032d6a43c0029059563de89126885282eb1ffab30eb568e4fd5f5e86862b96
   platforms: [linux/amd64, linux/arm64]
   command: ["cdncheck", "-i", "{target}", "-resp", "-jsonl", "-silent", "-duc"]
   output_format: jsonl
